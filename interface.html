@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STutor系統介面</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $( function() {
+        $( "#dialog" ).dialog({
+          autoOpen: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "explode",
+            duration: 1000
+          }
+        });
+     
+        $( "#a" ).on( "click", function() {
+          $( "#dialog" ).dialog( "open" );
+        });
+      } );
+      </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#tabs1">
+            STutor  
+          </a>
+        </div>
+		<ul class="nav navbar-nav"> 
+      <li><a href="../quefaaaaa.github.io/index.html">首頁</a></li>
+		  <li><a href="../quefaaaaa.github.io/motivation.html">專題動機</a></li>
+      <li><a href="../quefaaaaa.github.io/target.html">專題目的</a></li>
+      <li class="active"><a href="#tabs4">系統介面</a></li>
+    </ul>
+      </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide">
+      <!-- 輪播指示 -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- 輪播內容 -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="a.png" style="display:block; margin:auto;">
+          <div class="carousel-caption"><button id="a" type="button" class="btn btn-primary" text-align:"center">詳細介紹</button></div>
+          <div id="dialog" title="系統登入畫面">
+            <p>使用者輸入自己的Email和密碼即可登入系統。若是新會員可選擇註冊，進入到註冊畫面。</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="b.png" style="display:block; margin:auto;">
+          <div class="carousel-caption"><h3>捷克紀行2</h3></div>
+        </div>
+		<div class="item">
+          <img src="Czech3.jpg">
+          <div class="carousel-caption"><h3>捷克紀行3</h3></div>
+        </div>
+      </div>
+
+      <!-- 輪播控制 -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+  </body>
+</html>
